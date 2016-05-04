@@ -130,7 +130,7 @@ def analyze_camera(frame):
 
 def record():
     dir = "/home/pi/Desktop/ABCDVideos/" #base video directory
-    x = glob.glob(dir+"*") # Create list of all files in base directory
+    x = sorted(glob.glob(dir+"*")) # Create list of all files in base directory
     #Create a new folder if none exist.
     if not x:
         newdir = dir + "1"
